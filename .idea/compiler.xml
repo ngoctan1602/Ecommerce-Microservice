@@ -2,25 +2,36 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="ProductService" />
+        <module name="AddressServices" />
         <module name="DiscoveryServerices" />
+        <module name="APIGatewayService" />
+        <module name="ProductService" />
         <module name="InventoryService" />
+        <module name="TypeBusService" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="APIGateway" target="17" />
       <module name="ProductService (1)" target="17" />
+      <module name="TypeBusService (1)" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="APIGateway" options="-parameters" />
+      <module name="APIGatewayService" options="-parameters" />
+      <module name="AddressServices" options="-parameters" />
       <module name="DiscoveryServerices" options="-parameters" />
       <module name="InventoryService" options="-parameters" />
       <module name="ProductService" options="-parameters" />
       <module name="ProductService (1)" options="-parameters" />
+      <module name="TypeBusService" options="-parameters" />
+      <module name="TypeBusService (1)" options="-parameters" />
     </option>
   </component>
 </project>

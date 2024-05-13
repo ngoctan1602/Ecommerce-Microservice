@@ -8,11 +8,17 @@
         <option value="$PROJECT_DIR$/ProductService/pom.xml" />
         <option value="$PROJECT_DIR$/OrderService/pom.xml" />
         <option value="$PROJECT_DIR$/InventoryService/pom.xml" />
+        <option value="$PROJECT_DIR$/APIGateway/pom.xml" />
+        <option value="$PROJECT_DIR$/APIGatewayService/APIGatewayService/pom.xml" />
+        <option value="$PROJECT_DIR$/TypeBusService/pom.xml" />
+        <option value="$PROJECT_DIR$/TypeSeatService/pom.xml" />
+        <option value="$PROJECT_DIR$/AddressServices/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/OrderService/pom.xml" />
+        <option value="$PROJECT_DIR$/TypeSeatService/pom.xml" />
       </set>
     </option>
   </component>
