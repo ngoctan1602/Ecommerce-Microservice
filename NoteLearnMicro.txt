@@ -1,2 +1,4 @@
-Feign Client
+Communication with multiple Server Feign Client
 https://env.simplestep.ca/ : convert config app.yml to app.properties
+spring.cloud.gateway.discovery.locator.enable => discovery service to gateway
+tracing with zipkin
