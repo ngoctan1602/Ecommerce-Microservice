@@ -17,6 +17,7 @@ public class ApiGatewayServiceApplication {
 	@Bean
 	public RouteLocator routeLocator(RouteLocatorBuilder builder) {
 		return builder.routes()
+				.route("StationService", r -> r.path("/station/**").uri("lb://StationService"))
 				.route("AddressServices", r -> r.path("/address/**").uri("lb://AddressServices"))
 				.route("ProductService", r -> r.path("/product/**").uri("lb://ProductService"))
 				.route("TypeBusService", r -> r.path("/typebus/**").uri("lb://TypeBusService"))

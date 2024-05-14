@@ -26,8 +26,18 @@ public class WardService implements IWardService {
         District district = districtRepository.findById(idDistrict).orElseThrow(
                 () -> new CustomException(new DataResponse(true, HttpStatus.NOT_FOUND.value(), "Not found ward with idDistrict = " + idDistrict, null))
         );
-        List<WardResponse> wardResponses = wardRepository.findByDistrict(district).stream().
+        return wardRepository.findByDistrict(district).stream().
                 map(WardMapper.INSTANCE::toResponse).toList();
-        return wardResponses;
+
+    }
+    @Override
+    public WardResponse getWardById(Long idWard) {
+        Ward ward = wardRepository.findById(idWard).orElseThrow(
+                () -> new CustomException(new DataResponse(true, HttpStatus.NOT_FOUND.value(), "Not found ward with id = " + idWard, null))
+        );
+        WardResponse wardResponse = WardMapper.INSTANCE.toResponse(ward);
+        String address = wardRepository.getFullAddressWithId(idWard);
+        wardResponse.setFullAddress(address);
+        return wardResponse;
     }
 }
