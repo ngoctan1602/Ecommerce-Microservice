@@ -1,4 +1,4 @@
-package com.tantan.AddressServices.response.ward;
+package com.tantan.StationService.client.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -31,4 +31,10 @@ public class WardController {
                 new DataResponse(false, HttpStatus.NOT_FOUND.value(), "Not found ward with districtID = "+districtID, null)
         );
     }
+    @GetMapping("")
+    public ResponseEntity<DataResponse> getWardWithId(@RequestParam long id) {
+            return ResponseEntity.status(HttpStatus.OK).body(
+                    new DataResponse(false, HttpStatus.OK.value(), "Get ward successfully", iWardService.getWardById(id))
+            );
+    }
 }

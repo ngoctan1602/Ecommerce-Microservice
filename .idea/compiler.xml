@@ -7,11 +7,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="AddressServices" />
+        <module name="StationService" />
         <module name="DiscoveryServerices" />
-        <module name="APIGatewayService" />
         <module name="ProductService" />
         <module name="InventoryService" />
+        <module name="AddressServices" />
+        <module name="APIGatewayService" />
         <module name="TypeBusService" />
       </profile>
     </annotationProcessing>
@@ -30,6 +31,7 @@
       <module name="InventoryService" options="-parameters" />
       <module name="ProductService" options="-parameters" />
       <module name="ProductService (1)" options="-parameters" />
+      <module name="StationService" options="-parameters" />
       <module name="TypeBusService" options="-parameters" />
       <module name="TypeBusService (1)" options="-parameters" />
     </option>
